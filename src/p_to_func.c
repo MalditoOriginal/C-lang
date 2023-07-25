@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "functions.h"
 
-#define MAXLINES 5000 /* max #lines to be sorted */
 char *lineptr[MAXLINES]; /* pointers to text lines */
 
 int readlines(char* lineptr[], int nlines);
