@@ -64,6 +64,7 @@ int numcmp(char* s1, char* s2)
         return 0;
 }
 
+/*
 void swap(void* v[], int i, int j)
 {
     void* temp;
@@ -72,5 +73,6 @@ void swap(void* v[], int i, int j)
     v[i] = v[j];
     v[j] = temp;
 }
+*/
 
 
