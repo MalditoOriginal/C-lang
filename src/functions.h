@@ -1,6 +1,7 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+#define MAXVAL 100      /* maximum depth of value stack */
 #define MAXOP 100       /* max size of operand or operator */
 #define NUMBER '0'      /* signal that a number was found */
 #define BUFSIZE 100
