@@ -8,6 +8,7 @@
 #define ALLOCSIZE 10000 /* size of available space */
 #define MAXLEN 1000     /* max length of any input line */
 #define MAXLINES 5000   /* max #lines to be sorted */
+#define MAXLINE 1000    /* maximum input line length */
 
 char *alloc(int n);
 double atof(char s[]);
