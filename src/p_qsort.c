@@ -1,5 +1,5 @@
-/* s21_qsort: sort v[left]...v[right] int increaseing order */
-void s21_qsort(void* v[], int left, int right,
+/* p_qsort: sort v[left]...v[right] int increaseing order */
+void p_qsort(void* v[], int left, int right,
             int (*comp)(void *, void *))
 {
     int i, last;
@@ -13,6 +13,6 @@ void s21_qsort(void* v[], int left, int right,
         if ((*comp)(v[i], v[left]) < 0)
             swap(v, ++last, i);
     swap(v, left, last);
-    s21_qsort(v, left, last-1, comp);
-    s21_qsort(v, last+1, right, comp);
+    p_qsort(v, left, last-1, comp);
+    p_qsort(v, last+1, right, comp);
 }
