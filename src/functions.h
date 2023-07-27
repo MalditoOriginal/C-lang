@@ -9,4 +9,10 @@
 #define MAXLEN 1000     /* max length of any input line */
 #define MAXLINES 5000   /* max #lines to be sorted */
 
+char *alloc(int n);
+double atof(char s[]);
+int getch(void);
+int getint(int *pn);
+int getop(char s[]);
+
 #endif
