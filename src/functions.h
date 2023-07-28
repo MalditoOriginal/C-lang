@@ -15,5 +15,8 @@ double atof(char s[]);
 int getch(void);
 int getint(int *pn);
 int getop(char s[]);
+void itoa(int n, char *s);
+int numcmp(char *s1, char *s2);
+
 
 #endif
