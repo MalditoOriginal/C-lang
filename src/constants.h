@@ -10,6 +10,12 @@
 #define MAXLINES 5000   /* max #lines to be sorted */
 #define MAXLINE 1000    /* maximum input line length */
 #define NULL ((void *)0)    /* macro used to represent a null pointer */
+enum eof {EOF = -1};        /* macro used to represent an end of file number */
+
+enum escapes {
+    BELL = '\a', BACKSPASE = '\b', FFEED = '\f', NEWLINE = '\n', RETURN = '\r', HTAB = '\h',
+    VTAB = '\v', BSLASH = '\\', QMARK = '\?', SQUOTE = '\'', DQUOTE = '\"', ONUM = '\ooo'
+};
 
 char *alloc(int n);
 double atof(char s[]);
