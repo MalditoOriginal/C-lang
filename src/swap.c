@@ -1,8 +1,9 @@
-void swap(void* v[], int *px, int *py)     /* interchange *px and *py */
+/* swap: interchange v[i] and v [j] */
+void swap (int v[], int i, int j)
 {
-    void* temp;
+    int temp;
 
-    temp = *px;
-    *px = *py;
-    *py = temp;
+    temp = v[i];
+    v[i] = v[j];
+    v[j] = temp;
 }

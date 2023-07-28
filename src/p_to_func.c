@@ -8,7 +8,7 @@ char *lineptr[MAXLINES]; /* pointers to text lines */
 int readlines(char* lineptr[], int nlines);
 void writelines(char* lineptr[], int nlines);
 
-void s21_qsort(void* lineptr[], int left, int right,
+void p_qsort(void* lineptr[], int left, int right,
             int (*comp)(void *, void *));
 int numcmp(char *, char *);
 
@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
     if (argc > 1 && strcmp(argv[1], "-n") == 0)
         numeric = 1;
     if ((nlines = readlines(lineptr, MAXLINES)) >= 0) {
-        s21_qsort((void **) lineptr, 0, nlines-1,
+        p_qsort((void **) lineptr, 0, nlines-1,
             (int (*)(void *, void *))(numeric ? numcmp : strcmp));
         writelines(lineptr, nlines);
         return 0;
