@@ -1,5 +1,4 @@
-#include <stddef.h>
-#include "functions.h"
+#include "constants.h"
 
 /* realines: read input lines */
 int readlines(char* lineptr[], int maxlines)

@@ -1,5 +1,5 @@
 /* swap: interchange v[i] and v [j] */
-void swap (int v[], int i, int j)
+void swap(int *v, int i, int j)
 {
     int temp;
 
