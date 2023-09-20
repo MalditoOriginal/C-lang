@@ -1,7 +1,7 @@
 #include "constants.h"
 
 /* getline: specialized version */
-int getline(void)
+int getline_spec(void)
 {
     int c, i;
     extern char line[];

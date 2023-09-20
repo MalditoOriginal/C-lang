@@ -1,5 +1,5 @@
 /* copy: specialized version */
-void copy(void)
+void copy_spec(void)
 {
     int i;
     extern char line[], longest[];
