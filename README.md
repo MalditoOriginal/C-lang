@@ -1,5 +1,3 @@
-# C_langugage
-
 # C Functions Library
 
 This repository contains a collection of C functions that provide various utility and functionality for common tasks. Below, you'll find a list of the functions along with a brief description of each. Use this library to simplify your C programming tasks.
