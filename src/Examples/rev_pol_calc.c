@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "constants.h"
 
 int atof(char []);
 int getop(char []);

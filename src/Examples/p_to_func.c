@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "constants.h"
 
 char *lineptr[MAXLINES]; /* pointers to text lines */
 
