@@ -2,11 +2,11 @@ CC = gcc
 CFLAGS = -Wall
 LDFLAGS =
 
-SRC_DIR = /Users/fletamar/Desktop/C_Functions_Library/src/Examples/Chapter_4
+SRC_DIR = /Users/fletamar/Desktop/C_Functions_Library/src/Examples/Chapter_3
 BIN_DIR = /Users/fletamar/Desktop/C_Functions_Library/bin
 
 # Source files
-SRCS = $(SRC_DIR)/match_pttrn.c
+SRCS = $(SRC_DIR)/cnt_d_spc_oth.c
 # Add more source files if needed
 
 # Object files

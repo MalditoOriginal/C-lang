@@ -1,5 +1,5 @@
-#ifndef CONSTANTS_H
-#define CONSTANDTS_H
+#ifndef _FUNCTIONS_H
+#define _FUNCTIONS_H
 
 #define MAXVAL 100      /* maximum depth of value stack */
 #define MAXOP 100       /* max size of operand or operator */
@@ -28,7 +28,7 @@ unsigned getbits(unsigned x, int p, int n);
 int getint(int *pn);
 int getch(void);
 int getline_spec(void);
-int _getline(char *s, int lim);
+int s_getline(char *s, int lim);
 int getop(char s[]);
 void itoa(int n, char *s);
 int lower(int c);
@@ -45,7 +45,7 @@ void squeeze(char *s, int c);
 void _strcat(char* s, char* t);
 int strcmp(char* s, char* t);
 void _strcpy(char *s, char * t);
-int _strindex(char *s, char *t);
+int s_strindex(char *s, char *t);
 int _strlen(char *s);
 void swap(int *v, int i, int j);
 int trim(char *s);

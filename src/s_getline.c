@@ -1,7 +1,7 @@
 #include "_functions.h"
 
 /* getline: read a line into s, return lenth */
-int _getline(char *s, int lim)
+int s_getline(char *s, int lim)
 {
     int c = 0, i;
 
