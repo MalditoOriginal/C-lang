@@ -1,5 +1,5 @@
 /* strlen: return length of string s */
-int strlen(char* s)
+int _strlen(char* s)
 {
     /* Create a pointer 'p' that points to the start of the input string 's' */
     char* p = s;

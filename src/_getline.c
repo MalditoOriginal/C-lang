@@ -1,7 +1,7 @@
-#include "constants.h"
+#include "_functions.h"
 
 /* getline: read a line into s, return lenth */
-int getline(char *s, int lim)
+int _getline(char *s, int lim)
 {
     int c = 0, i;
 

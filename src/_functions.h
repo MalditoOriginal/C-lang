@@ -13,8 +13,8 @@
 enum eof {EOF = -1};        /* macro used to represent an end of file number */
 
 enum escapes {
-    BELL = '\a', BACKSPASE = '\b', FFEED = '\f', NEWLINE = '\n', RETURN = '\r', HTAB = '\h',
-    VTAB = '\v', BSLASH = '\\', QMARK = '\?', SQUOTE = '\'', DQUOTE = '\"', ONUM = '\ooo'
+    BELL = '\a', BACKSPASE = '\b', FFEED = '\f', NEWLINE = '\n', RETURN = '\r', HTAB = '\t',
+    VTAB = '\v', BSLASH = '\\', QMARK = '\?', SQUOTE = '\'', DQUOTE = '\"', ONUM = '\007'
 };
 
 char *alloc(int n);
@@ -28,7 +28,7 @@ unsigned getbits(unsigned x, int p, int n);
 int getint(int *pn);
 int getch(void);
 int getline_spec(void);
-int getline(char *s, int lim);
+int _getline(char *s, int lim);
 int getop(char s[]);
 void itoa(int n, char *s);
 int lower(int c);
@@ -42,11 +42,11 @@ int rand(void);
 int readlines(char* lineptr[], int maxlines);
 void reverseStr(char *s);
 void squeeze(char *s, int c);
-void strcat(char* s, char* t);
+void _strcat(char* s, char* t);
 int strcmp(char* s, char* t);
-void strcpy(char *s, char * t);
-int strindex(char *s, char *t);
-int strlen(char *s);
+void _strcpy(char *s, char * t);
+int _strindex(char *s, char *t);
+int _strlen(char *s);
 void swap(int *v, int i, int j);
 int trim(char *s);
 void ungetch(int c);

@@ -1,5 +1,7 @@
+#include "_functions.h"
+
 /* strcat: concatenate 't' to the end of 's'; 's' must be big enough */
-void strcat(char *s, char *t)
+void _strcat(char *s, char *t)
 {
     int i, j;
     i = j = 0;

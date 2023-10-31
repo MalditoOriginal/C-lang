@@ -1,5 +1,6 @@
+#include "_functions.h"
 /* strindex: return index of t in s, -1 if none */
-int strindex(char *s, char *t)
+int _strindex(char *s, char *t)
 {
     int i, j, k;
     
