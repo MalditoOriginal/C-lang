@@ -1,5 +1,7 @@
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
+
 /* strcat: concatenate 't' to the end of 's'; 's' must be big enough */
-void strcat(char *s, char *t)
+void custom_strcat(char *s, char *t)
 {
     int i, j;
     i = j = 0;

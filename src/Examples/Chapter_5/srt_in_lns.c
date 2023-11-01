@@ -1,13 +1,7 @@
-#include "constants.h"
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
+#include <stdio.h>
 
 char *lineptr[MAXLINES]; /* pointers to text lines */
-
-int readlines(char* lineptr[], int nlines);
-void writelines(char* lineptr[], int nlines);
-
-void p_qsort(void* lineptr[], int left, int right,
-            int (*comp)(void *, void *));
-int numcmp(char *, char *);
 
 /* sort input lines */
 int main(int argc, char* argv[]) {
@@ -18,7 +12,7 @@ int main(int argc, char* argv[]) {
         numeric = 1;
     if ((nlines = readlines(lineptr, MAXLINES)) >= 0) {
         p_qsort((void **) lineptr, 0, nlines-1,
-            (int (*)(void *, void *))(numeric ? numcmp : strcmp));
+            (int (*)(void *, void *))(numeric ? custom_numcmp : strcmp));
         writelines(lineptr, nlines);
         return 0;
     } else {

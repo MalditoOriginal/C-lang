@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /* writelines: write output lines */
 void writelines(char* lineptr[], int nlines)
 {

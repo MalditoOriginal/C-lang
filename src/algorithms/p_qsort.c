@@ -1,4 +1,4 @@
-#include "src/_functions.h"
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
 
 /* p_qsort: sort v[left]...v[right] int increaseing order */
 void p_qsort(void* v[], int left, int right,

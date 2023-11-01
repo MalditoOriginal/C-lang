@@ -23,40 +23,44 @@ void p_qsort(void* v[], int left, int right, int (*comp)(void *, void *));
 void qsort(int v[], int left, int right);
 void shellsort(int v[], int n);
 
-/* Functions */
-char *alloc(int n);
-double atof(char s[]);
-double atoi(char *s);
-int bitcount(unsigned x);
-void copy_spec(void);
-void copy(char *to, const char* from);
-void eof();
-unsigned getbits(unsigned x, int p, int n);
-int getint(int *pn);
-int getch(void);
-int getline_spec(void);
-int getline(char *s, int lim);
-int getop(char s[]);
-void itoa(int n, char *s);
-int lower(int c);
-int numcmp(char *s1, char *s2);
-void p_swap(void* v[], int *px, int *py);
-double pop(void);
-int power_reverse(int base, int n);
-void printd(int n);
-void push(double f);
-int rand(void);
-int readlines(char* lineptr[], int maxlines);
-void reverseStr(char *s);
-void squeeze(char *s, int c);
-void strcat(char* s, char* t);
-int strcmp(char* s, char* t);
-void strcpy(char *s, char * t);
-int strindex(char *s, char *t);
-int strlen(char *s);
-void swap(int *v, int i, int j);
-int trim(char *s);
-void ungetch(int c);
-void writelines(char *lineptr[], int nlines);
+/* String Manipulation */
+char *alloc(int n);                         /* Allocates memory */
+void copy(char *to, const char *from);      /* Copies a string */
+void copy_spec(void);                       /* Copies input to output */
+int custom_getline(char *s, int lim);              /* Reads a line into a string */
+void reverseStr(char *s);                   /* Reverses a string */
+void squeeze(char *s, int c);               /* Removes a character from a string */
+void custom_strcat(char *s, char *t);              /* Concatenates two strings */
+int strcmp(char *s, char *t);               /* Compares two strings */
+void custom_strcpy(char *s, char *t);              /* Copies a string */
+int strindex(char *s, char *t);             /* Searches for a substring in a string */
+int custom_strlen(char *s);                        /* Calculates the length of a string */
+int trim(char *s);                          /* Trims leading and trailing whitespace from a string */
+
+/* Character and String Functions */
+int atoi(char *s);                          /* Converts a string to an integer */
+int lower(int c);                           /* Converts a character to lowercase */
+int getop(char s[]);                        /* Gets the next operator or numeric operand */
+void itoa(int n, char *s);                  /* Converts an integer to a string */
+double atof(char s[]);                      /* Convert a string to float */
+void printd(int n);                         /* Prints an integer as a double */
+int getbits(unsigned x, int p, int n);      /* Gets `n` bits from an integer `x` */
+
+/* Mathematical and Numerical Functions */
+int bitcount(unsigned x);                   /* Counts the number of set bits in an integer */
+int power_reverse(int base, int n);         /* Calculates the reverse of `base` raised to `n` */
+int custom_numcmp(char* s1, char* s2);             /* numcmp: compare s1 and s2 numerically */
+
+/* Input and Output Functions */
+void eof(void);                                 /* Checks for end-of-file */
+int getch(void);                                /* Gets a character from input */
+int getint(int *pn);                            /* Gets an integer from input */
+void p_swap(void *v[], int *px, int *py);       /* Swaps elements in an array */
+double pop(void);                               /* Pops a value from the stack */
+void push(double f);                            /* Pushes a value onto the stack */
+int rand(void);                                 /* Generates a random integer */
+int readlines(char* lineptr[], int maxlines);   /* Reads lines of input into an array */
+void ungetch(int c);                            /* Pushes a character back onto input */
+void writelines(char *lineptr[], int nlines);   /* Writes lines to output */
 
 #endif

@@ -1,4 +1,4 @@
-#include "custom_functions.h"
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
 
 /* realines: read input lines */
 int readlines(char* lineptr[], int maxlines)

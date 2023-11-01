@@ -1,5 +1,7 @@
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
+
 /* numcmp: compare s1 and s2 numerically */
-int numcmp(char* s1, char* s2)
+int custom_numcmp(char* s1, char* s2)
 {
     double v1, v2;
 
