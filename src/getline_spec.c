@@ -1,4 +1,4 @@
-#include "constants.h"
+#include "custom_functions.h"
 
 /* getline: specialized version */
 int getline_spec(void)

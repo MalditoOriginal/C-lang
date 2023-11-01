@@ -1,5 +1,5 @@
-#ifndef _FUNCTIONS_H
-#define _FUNCTIONS_H
+#ifndef CUSTOM_FUNCTIONS_H
+#define CUSTOM_FUNCTIONS_H
 
 #define MAXVAL 100      /* maximum depth of value stack */
 #define MAXOP 100       /* max size of operand or operator */
@@ -10,13 +10,20 @@
 #define MAXLINES 5000   /* max #lines to be sorted */
 #define MAXLINE 1000    /* maximum input line length */
 #define NULL ((void *)0)    /* macro used to represent a null pointer */
-enum eof {EOF = -1};        /* macro used to represent an end of file number */
 
+enum eof {EOF = -1};        /* macro used to represent an end of file number */
 enum escapes {
     BELL = '\a', BACKSPASE = '\b', FFEED = '\f', NEWLINE = '\n', RETURN = '\r', HTAB = '\t',
     VTAB = '\v', BSLASH = '\\', QMARK = '\?', SQUOTE = '\'', DQUOTE = '\"', ONUM = '\007'
 };
 
+/* Algorithms */
+int binsearch(int x, int *v, int n);
+void p_qsort(void* v[], int left, int right, int (*comp)(void *, void *));
+void qsort(int v[], int left, int right);
+void shellsort(int v[], int n);
+
+/* Functions */
 char *alloc(int n);
 double atof(char s[]);
 double atoi(char *s);
@@ -28,7 +35,7 @@ unsigned getbits(unsigned x, int p, int n);
 int getint(int *pn);
 int getch(void);
 int getline_spec(void);
-int s_getline(char *s, int lim);
+int getline(char *s, int lim);
 int getop(char s[]);
 void itoa(int n, char *s);
 int lower(int c);
@@ -42,11 +49,11 @@ int rand(void);
 int readlines(char* lineptr[], int maxlines);
 void reverseStr(char *s);
 void squeeze(char *s, int c);
-void _strcat(char* s, char* t);
+void strcat(char* s, char* t);
 int strcmp(char* s, char* t);
-void _strcpy(char *s, char * t);
-int s_strindex(char *s, char *t);
-int _strlen(char *s);
+void strcpy(char *s, char * t);
+int strindex(char *s, char *t);
+int strlen(char *s);
 void swap(int *v, int i, int j);
 int trim(char *s);
 void ungetch(int c);

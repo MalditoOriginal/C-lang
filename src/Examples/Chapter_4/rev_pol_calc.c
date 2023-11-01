@@ -1,4 +1,5 @@
 #include "_functions.h"
+#include <stdio.h>
 
 int atof(char []);
 int getop(char []);

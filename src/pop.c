@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "custom_functions.h"
 
 int sp = 0; /* next free stack position */
 double val[MAXVAL]; /* value stack */

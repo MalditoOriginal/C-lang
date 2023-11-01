@@ -1,7 +1,4 @@
 /* atof: convert string s to double */
-/// @brief 
-/// @param s 
-/// @return 
 double atof(char s[])
 {
     double val, power;

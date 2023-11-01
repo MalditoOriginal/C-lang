@@ -1,9 +1,10 @@
+#include "src/_functions.h"
+
 /* p_qsort: sort v[left]...v[right] int increaseing order */
 void p_qsort(void* v[], int left, int right,
             int (*comp)(void *, void *))
 {
     int i, last;
-    void p_swap(void *v[], int, int);
 
     if (left >= right) /* do nothing if array contains */
         return;        /* fewer than two elements */

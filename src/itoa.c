@@ -1,5 +1,3 @@
-void reverseStr(char *s);
-
 /* itoa: convert n to charachters in s */
 void itoa(int n, char *s)
 {

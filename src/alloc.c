@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "custom_functions.h"
 
 static char allocbuf[ALLOCSIZE];    /* storage for alloc */
 static char *allocp = allocbuf;     /* next free position */

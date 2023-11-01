@@ -1,8 +1,4 @@
-#include <ctype.h>
-#include <stdio.h>
-
-int getch(void);
-void ungetch(int);
+#include "custom_functions.h"
 
 /* getint: get netxt integer from input into *pn */
 int getint(int *pn)

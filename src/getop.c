@@ -1,9 +1,4 @@
-#include <ctype.h>
-#include <stdio.h>
-#include "functions.h"
-
-int getch(void);
-void ungetch(int);
+#include "custom_functions.h"
 
 /* getop: get next operator or numeric operand */
 int getop(char s[])

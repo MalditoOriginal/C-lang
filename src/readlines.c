@@ -1,4 +1,4 @@
-#include "constants.h"
+#include "custom_functions.h"
 
 /* realines: read input lines */
 int readlines(char* lineptr[], int maxlines)
