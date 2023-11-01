@@ -1,5 +1,5 @@
-#include "custom_functions.h"
-
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
+#include <stdio.h>
 /* getline: read a line into s, return lenth */
 int custom_getline(char *s, int lim)
 {

@@ -1,4 +1,4 @@
-#include "custom_functions.h"
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/custom_functions.h"
 
 char buf[BUFSIZE];      /* buffer for ungetch */
 int bufp = 0;           /* next free position in buffer */
