@@ -10,6 +10,10 @@ int main() {
     ip = &z[0];         /* ip now points to z[0] */
 
     printf("The value of ip is: %f\n", ip);
+    printf("The value of ip is: %f\n", *ip);
     printf("The value of x is: %f\n", x);
+    printf("The value of x is: %f\n", &x);
     printf("The value of y is: %f", y);
+    printf("The value of x is: %f\n", &z);
+    printf("The value of y is: %f", z);
 }
