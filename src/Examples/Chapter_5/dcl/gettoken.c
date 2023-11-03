@@ -1,4 +1,4 @@
-#include "dsl.h"
+#include "/Users/fletamar/Desktop/C_Functions_Library/src/Examples/Chapter_5/dcl/dcl.h"
 
 int gettoken(void)  /* return next token */
 {
@@ -11,7 +11,7 @@ int gettoken(void)  /* return next token */
     if (c == '(') {
         if ((c = getch()) == ')') {
             strcpy(token, "()");
-            return toketype = PARENS;
+            return tokentype = PARENS;
         } else {
             ungetch(c);
             return tokentype = '(';

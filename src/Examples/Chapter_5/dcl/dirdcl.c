@@ -1,3 +1,5 @@
+#include "dcl.h"
+
 /* dirdcl: parse a direct declarator */
 void dirdcl(void) {
     int type;

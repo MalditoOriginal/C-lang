@@ -1,3 +1,6 @@
+#include "dcl.h"
+#include <stdio.h>
+
 /* undcl: convert word description to declaration */
 int main() {
     int type;

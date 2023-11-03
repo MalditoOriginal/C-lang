@@ -1,3 +1,5 @@
+#include "dcl.h"
+
 /*dcl: parse a declarator */
 void dcl(void) {
     int ns;
